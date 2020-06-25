@@ -7,25 +7,17 @@ export default function Navigation() {
          role="navigation"
          aria-label="navigation"
       >
-         <a href="create-cue.html" type="button" className="btn btn-secondary ">
+         <button type="button" className="btn btn-secondary ">
             Quiz
-         </a>
+         </button>
 
-         <a
-            href="review-cue.html"
-            type="button"
-            className="btn btn-secondary tab-separator"
-         >
+         <button type="button" className="btn btn-secondary tab-separator">
             Matches
-         </a>
+         </button>
 
-         <a
-            href="all-cards.html"
-            type="button"
-            className="btn btn-secondary tab-separator"
-         >
+         <button type="button" className="btn btn-secondary tab-separator">
             Reviews
-         </a>
+         </button>
       </div>
    );
 }
