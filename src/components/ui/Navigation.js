@@ -9,11 +9,7 @@ export default function Navigation() {
       } else return "";
    };
    const tabActiveOnMatches = (url) => {
-      if (
-         url.indexOf("lip-results") > 0 ||
-         url.indexOf("review-answer") > 0 ||
-         url.indexOf("review-empty") > 0
-      ) {
+      if (url.indexOf("lip-results") > 0) {
          return "tab-active";
       } else return "";
    };
@@ -32,15 +28,14 @@ export default function Navigation() {
          <Link
             to="/lip-service-quiz"
             type="button"
-            className={`btn btn-secondary tab-separator ${tabActiveOnQuiz(
-               url
-            )} `}
+            className={`btn btn-secondary ${tabActiveOnQuiz(url)} `}
          >
             Quiz
          </Link>
 
          <Link
-            type="/lip-results"
+            to="/lip-results"
+            type="button"
             className={`btn btn-secondary tab-separator ${tabActiveOnMatches(
                url
             )} `}
@@ -49,7 +44,8 @@ export default function Navigation() {
          </Link>
 
          <Link
-            type="/lip-results"
+            to="/your-looks"
+            type="button"
             className={`btn btn-secondary tab-separator ${tabActiveOnLooks(
                url
             )} `}
