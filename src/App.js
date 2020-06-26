@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"; //as 
 import Landing from "./components/pages/Landing";
 import LipServiceQuiz from "./components/pages/LipServiceQuiz";
 import LipResults from "./components/pages/LipResults";
+import YourLooks from "./components/pages/YourLooks";
 import NotFound from "./components/pages/NotFound";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
             <Route exact path="/" component={Landing} />
             <Route exact path="/lip-service-quiz" component={LipServiceQuiz} />
             <Route exact path="/lip-results" component={LipResults} />
+            <Route exact path="/your-looks" component={YourLooks} />
             <Route component={NotFound} />
          </Switch>
       </Router>

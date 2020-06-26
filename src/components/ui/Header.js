@@ -1,5 +1,6 @@
 import React from "react";
 import appLogo from "../../icons/rote-lippen.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
    return (
@@ -15,13 +16,9 @@ export default function Header() {
             Lip Service
          </h3>
 
-         <a
-            href="index.html"
-            type="button"
-            className="btn btn-link float-right"
-         >
+         <Link to="/" type="button" className="btn btn-link float-right">
             Log out
-         </a>
+         </Link>
       </div>
    );
 }

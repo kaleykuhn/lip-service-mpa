@@ -6,17 +6,19 @@
 
 //landing
 #form1 {
-   display: none;
+   //display: none;
 }
 
 .landing-background {
-   background-image: url("/images/background-landing.jpg");
+   background: url("../img/promlips.jpeg") no-repeat center center fixed;
    background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
+   //background-repeat: no-repeat;
+   //spread across 100% of viewport
+   //background-position: center center;
+   min-height: 100vh;
 }
 .bear-text {
-   color: white;
+   color: rgb(155, 14, 14);
 }
 
 // styles log out to make flush with edge of card and font adjusted with var remove border truly flush
