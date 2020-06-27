@@ -9,10 +9,14 @@ export default function LipServiceQuiz() {
          <Header />
          <Navigation />
          <div className="mb-5"></div>
+
          <p className="mb-4">Give your Lips the personality they deserve!</p>
-         <div className="ml-8">
-            <p>Which of the following most describes yourself ?</p>
-            <div className="form-check form-check-inline ml-6">
+         <br></br>
+         <div>
+            <p className="mb-2">
+               Which of the following most describes yourself ?
+            </p>
+            <div className="form-check form-check-inline ">
                <input
                   className="form-check-input"
                   type="radio"
@@ -49,8 +53,10 @@ export default function LipServiceQuiz() {
                </label>
             </div>
             <div className="mb-5"></div>
-            <p>Which of the following most describes yourself ?</p>
-            <div className="form-check form-check-inline ml-6">
+            <p className="mb-2">
+               Which of the following most describes yourself ?
+            </p>
+            <div className="form-check form-check-inline ">
                <input
                   className="form-check-input"
                   type="radio"
@@ -87,8 +93,10 @@ export default function LipServiceQuiz() {
                </label>
             </div>
             <div className="mb-5"></div>
-            <p>Which of the following most describes yourself ?</p>
-            <div className="form-check form-check-inline ml-6">
+            <p className="mb-2">
+               Which of the following most describes yourself ?
+            </p>
+            <div className="form-check form-check-inline">
                <input
                   className="form-check-input"
                   type="radio"
@@ -125,8 +133,10 @@ export default function LipServiceQuiz() {
                </label>
             </div>
             <div className="mb-5"></div>
-            <p>Which of the following most describes yourself ?</p>
-            <div className="form-check form-check-inline ml-6">
+            <p className="mb-2">
+               Which of the following most describes yourself ?
+            </p>
+            <div className="form-check form-check-inline ">
                <input
                   className="form-check-input"
                   type="radio"
@@ -163,8 +173,10 @@ export default function LipServiceQuiz() {
                </label>
             </div>
             <div className="mb-5"></div>
-            <p>Which of the following most describes yourself ?</p>
-            <div className="form-check form-check-inline ml-6">
+            <p className="mb-2">
+               Which of the following most describes yourself ?
+            </p>
+            <div className="form-check form-check-inline">
                <input
                   className="form-check-input"
                   type="radio"
@@ -201,8 +213,10 @@ export default function LipServiceQuiz() {
                </label>
             </div>
             <div className="mb-5"></div>
-            <p>Which of the following most describes yourself ?</p>
-            <div className="form-check form-check-inline ml-6">
+            <p className="mb-2">
+               Which of the following most describes yourself ?
+            </p>
+            <div className="form-check form-check-inline ">
                <input
                   className="form-check-input"
                   type="radio"
@@ -238,11 +252,12 @@ export default function LipServiceQuiz() {
                   Compassionate
                </label>
             </div>
+
             <div className="mb-5"></div>
          </div>
          <Link
             to="/lip-results"
-            className="btn btn-outline-primary btn-lg float-right"
+            className="btn btn-outline-primary btn-lg float-right "
             id="nextButton"
          >
             Next
