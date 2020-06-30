@@ -15,18 +15,23 @@ export default function LipResults() {
          <h2>Results</h2>
          <hr className="my-4"></hr>
          <div className="mb-5"></div>
-         <div className="col">
-            <h3 className="mb-4 ml-7">
-               Give your Lips the personality they deserve!
-            </h3>
+         <div className="row">
+            <div className="col">
+               <h3 className="text-center">
+                  Give your Lips the personality they deserve!
+               </h3>
+            </div>
          </div>
-         <div>
-            <p className="mb-5">
-               These are your personalized lip matches.The buy now buttons will
-               instantly take you to purchase your personalized lip color.You
-               can save each look by clicking save below.
-            </p>
+         <div className="row">
+            <div className="col">
+               <p className="my-5">
+                  These are your personalized lip matches.The buy now buttons
+                  will instantly take you to purchase your personalized lip
+                  color.You can save each look by clicking save below.
+               </p>
+            </div>
          </div>
+
          <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} />
          <div className="card-header">Match</div>
          <div className="card-body">
@@ -57,11 +62,11 @@ export default function LipResults() {
             <p className="card-text" id="cardfontcolor">
                {" "}
                <br></br>
-               Brick rose with a Comfort Matte finish. It's a medium-dark rosy
-               plum with warm undertones and a creamy finish. It has a rich
-               color payoff with a very smooth, creamy consistency that glides
-               onto lips and just makes lips look plumper. This creamy formula
-               is loaded with nourishing ingredients.
+               Hitch Hike is a brick rose with a Comfort Matte finish. It's a
+               medium-dark rosy plum with warm undertones and a creamy finish.
+               It has a rich color payoff with a very smooth, creamy consistency
+               that glides onto lips and just makes lips look plumper. This
+               creamy formula is loaded with nourishing ingredients.
             </p>
          </div>
          <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} />
@@ -118,13 +123,13 @@ export default function LipResults() {
                className=" float-right"
             />
             <div className="mb-0"></div>
-            <h4 id="cardfontcolor"> Name: Lovelight</h4>
+            <h4 id="cardfontcolor"> Name: Love Light</h4>
             <h4 id="cardfontcolor"> Color: Dark Coral</h4>
             <h4 id="cardfontcolor"> Finish: Sheer Shimmer</h4>
             <h4 id="cardfontcolor"> Brand: Urban Decay</h4>
 
             <a
-               href="https://www.urbandecay.com/on/demandware.store/Sites-urbandecay-us-Site/default/Cart-Show/C1425793862"
+               href="https://www.urbandecay.com/vice-lipstick-by-urban-decay/3605971157394.html?quantity=1&uuid=fba468fe1b4bcdf8449768795a"
                className="btn btn-primary float-right btn-sm  "
             >
                Buy Now
