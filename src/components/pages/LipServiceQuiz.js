@@ -35,13 +35,13 @@ export default function LipServiceQuiz() {
                   <input
                      className="custom-control-input"
                      type="radio"
-                     name="inlineRadioOptions"
-                     id="inlineRadio1"
+                     name="quizquestion1radio"
+                     id="942d4afe-5370-400d-b71f-d9f61c644f3e"
                      value="option1"
                   />
                   <label
                      className="custom-control-label"
-                     htmlFor="inlineRadio1"
+                     htmlFor="942d4afe-5370-400d-b71f-d9f61c644f3e"
                   >
                      Daring
                   </label>
@@ -50,13 +50,13 @@ export default function LipServiceQuiz() {
                   <input
                      className="custom-control-input "
                      type="radio"
-                     name="inlineRadioOptions"
-                     id="inlineRadio2"
+                     name="quizquestion1radio"
+                     id="d996f5fe-342a-42ba-bee8-329e78b13307"
                      value="option2"
                   />
                   <label
                      className="custom-control-label"
-                     htmlFor="inlineRadio2"
+                     htmlFor="d996f5fe-342a-42ba-bee8-329e78b13307"
                   >
                      Reserved
                   </label>
@@ -65,23 +65,19 @@ export default function LipServiceQuiz() {
                   <input
                      className="custom-control-input"
                      type="radio"
-                     name="inlineRadioOptions"
-                     id="inlineRadio3"
+                     name="quizquestion1radio"
+                     id="bc137dc8-74e1-402c-b2e3-f83a5aa75c32"
                      value="option3"
                   />
                   <label
                      className="custom-control-label"
-                     htmlFor="inlineRadio3"
+                     htmlFor="bc137dc8-74e1-402c-b2e3-f83a5aa75c32"
                   >
                      Compassionate
                   </label>
                </div>
                <div className="mb-4"></div>
-               <div>
-                  <button className="btn btn-primary btn-outline-secondary text-white float-right">
-                     next
-                  </button>
-               </div>
+               <div></div>
             </div>
          </div>
          <div className="mb-5"></div>
@@ -141,12 +137,6 @@ export default function LipServiceQuiz() {
                   </label>
                </div>
                <div className="mb-4"></div>
-               <div>
-                  <button className="btn btn-primary">back</button>
-                  <button className="btn btn-primary btn-outline-secondary text-white float-right">
-                     next
-                  </button>
-               </div>
             </div>
          </div>
          <div className="mb-5"></div>
@@ -206,12 +196,6 @@ export default function LipServiceQuiz() {
                   </label>
                </div>
                <div className="mb-4"></div>
-               <div>
-                  <button className="btn btn-primary">back</button>
-                  <button className="btn btn-primary btn-outline-secondary text-white float-right">
-                     next
-                  </button>
-               </div>
             </div>
          </div>
          <div className="mb-5"></div>
@@ -271,12 +255,6 @@ export default function LipServiceQuiz() {
                   </label>
                </div>
                <div className="mb-4"></div>
-               <div>
-                  <button className="btn btn-primary">back</button>
-                  <button className="btn btn-primary btn-outline-secondary text-white float-right">
-                     next
-                  </button>
-               </div>
             </div>
          </div>
          <div className="mb-5"></div>
@@ -336,12 +314,6 @@ export default function LipServiceQuiz() {
                   </label>
                </div>
                <div className="mb-4"></div>
-               <div>
-                  <button className="btn btn-primary">back</button>
-                  <button className="btn btn-primary btn-outline-secondary text-white float-right">
-                     next
-                  </button>
-               </div>
             </div>
          </div>
          <div className="mb-5"></div>
@@ -401,9 +373,6 @@ export default function LipServiceQuiz() {
                   </label>
                </div>
                <div className="mb-4"></div>
-               <div>
-                  <button className="btn btn-primary">back</button>
-               </div>
             </div>
          </div>
 
