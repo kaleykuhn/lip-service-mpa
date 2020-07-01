@@ -48,4 +48,30 @@ const users = [
          },
       ],
    },
+   {
+      id: "6c091285-644d-455a-800f-921656c2b2de",
+      email: "KateC@gmail.com",
+      password: "16C92AE31774F26F2314CC8061D4768891D19381",
+      createdAt: "1593568980",
+      tags: [
+         {
+            id: "bc137dc8-74e1-402c-b2e3-f83a5aa75c32",
+            answer: "Compassionate",
+         },
+
+         {
+            id: "89887a54-ce4c-40b3-968a-4a0e10c4f4ab",
+            answer: "Communicative",
+         },
+         {
+            id: "a74c46e3-54d4-4694-a725-5b15e5e06689",
+            answer: " Decisiveness",
+         },
+
+         {
+            id: "ac1ab5d3-1c67-4afc-94c1-c2765efcaa9f",
+            answer: "Dominance",
+         },
+      ],
+   },
 ];
