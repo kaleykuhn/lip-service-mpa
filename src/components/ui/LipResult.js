@@ -24,7 +24,7 @@ export default class LipResult extends React.Component {
                   src={lipstick.modelImageUrl}
                   width="182px;"
                   alt="Lip Service Lips"
-                  className=" float-right"
+                  className="float-right"
                />
                <div className="mb-0"></div>
                <h4 id="cardfontcolor">{lipstick.name}</h4>
