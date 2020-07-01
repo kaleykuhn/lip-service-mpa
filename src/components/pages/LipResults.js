@@ -4,18 +4,18 @@ import Navigation from "../ui/Navigation";
 import AppTemplate from "../ui/AppTemplate";
 import { Link } from "react-router-dom";
 import LipResult from "../ui/LipResult";
-import exHitchHike from "../../img/hitchhikeexample.jpg";
-import exBigBang from "../../img/exbigbang.jpg";
-import Lovelight from "../../img/Lovelight.jpg";
-import appLogo from "../../img/comfortmattetemperud.jpg";
+
 import lipsticks from "../../mock-data/lipsticks";
 export default function LipResults() {
    return (
       <AppTemplate>
          <Header />
          <Navigation />
-
-         <h2>Results</h2>
+         <div className="row">
+            <div className="col">
+               <h2>Results</h2>
+            </div>
+         </div>
          <hr className="my-4"></hr>
          <div className="mb-5"></div>
          <div className="row">
