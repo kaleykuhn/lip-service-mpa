@@ -12,8 +12,8 @@ export default function LipResults() {
          <Header />
          <Navigation />
          <div className="row">
-            <div className="col">
-               <h2>Results</h2>
+            <div className="col mb-0">
+               <h2 className="mb-0">Results</h2>
             </div>
          </div>
          <hr className="my-4"></hr>
@@ -38,6 +38,13 @@ export default function LipResults() {
          <LipResult lipstick={lipsticks[4]} />
          <LipResult lipstick={lipsticks[5]} />
          <LipResult lipstick={lipsticks[11]} />
+         {}
+         {/* {users.map((lipResult) => {
+            return (
+            <LipResult  tags={lipResult.tags}} 
+            />
+            );
+         })} */}
 
          {/* <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} />
          <div className="card-header">Match</div>
@@ -149,7 +156,6 @@ export default function LipResults() {
                pearl finish.
             </p>
          </div> */}
-
          <div className="mb-8"></div>
          <div className="mb-8"></div>
          <Link
