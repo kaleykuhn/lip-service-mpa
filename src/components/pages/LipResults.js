@@ -3,15 +3,18 @@ import Header from "../ui/Header";
 import Navigation from "../ui/Navigation";
 import AppTemplate from "../ui/AppTemplate";
 import { Link } from "react-router-dom";
+import LipResult from "../ui/LipResult";
 import exHitchHike from "../../img/hitchhikeexample.jpg";
 import exBigBang from "../../img/exbigbang.jpg";
 import Lovelight from "../../img/Lovelight.jpg";
 import appLogo from "../../img/comfortmattetemperud.jpg";
+import lipsticks from "../../mock-data/lipsticks";
 export default function LipResults() {
    return (
       <AppTemplate>
          <Header />
          <Navigation />
+
          <h2>Results</h2>
          <hr className="my-4"></hr>
          <div className="mb-5"></div>
@@ -24,15 +27,19 @@ export default function LipResults() {
          </div>
          <div className="row">
             <div className="col">
-               <p className="my-5">
+               <p className=" my-5  d-flex justify-content-left ">
                   These are your personalized lip matches.The buy now buttons
                   will instantly take you to purchase your personalized lip
                   color.You can save each look by clicking save below.
                </p>
             </div>
          </div>
+         <LipResult lipstick={lipsticks[1]} />
+         <LipResult lipstick={lipsticks[4]} />
+         <LipResult lipstick={lipsticks[5]} />
+         <LipResult lipstick={lipsticks[11]} />
 
-         <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} />
+         {/* <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} />
          <div className="card-header">Match</div>
          <div className="card-body">
             <img
@@ -48,10 +55,10 @@ export default function LipResults() {
                className=" float-right"
             />
             <div className="mb-0"></div>
-            <h4 id="cardfontcolor"> Name: Hitch Hike</h4>
-            <h4 id="cardfontcolor"> Color: Brick Rose</h4>
-            <h4 id="cardfontcolor"> Finish: Comfort Matte</h4>
-            <h4 id="cardfontcolor"> Brand: Urban Decay</h4>
+            <h4 id="cardfontcolor"> {lipsticks[0].name}</h4>
+            <h4 id="cardfontcolor"> Brick Rose</h4>
+            <h4 id="cardfontcolor"> Comfort Matte</h4>
+            <h4 id="cardfontcolor"> Urban Decay</h4>
             <a
                href="https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html"
                className="btn btn-primary float-right btn-sm  "
@@ -141,7 +148,7 @@ export default function LipResults() {
                Lovelight is a moderately warm-toned, medium-dark coral with a
                pearl finish.
             </p>
-         </div>
+         </div> */}
 
          <div className="mb-8"></div>
          <div className="mb-8"></div>

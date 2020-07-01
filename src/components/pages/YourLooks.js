@@ -15,7 +15,7 @@ export default function YourLooks() {
          <div className="mb-5"></div>
          <div className="row">
             <div className="col">
-               <h3 className="mb-4 ml-8">
+               <h3 className="text-center mb-5">
                   Give your Lips the personality they deserve!
                </h3>
             </div>
