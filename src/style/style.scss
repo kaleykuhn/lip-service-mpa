@@ -4,7 +4,7 @@
    font-family: "Alice";
 }
 
-#cardfontcolor {
+.cardfontcolor {
    color: black;
 }
 
@@ -21,7 +21,7 @@
 //}
 
 /* the shadow; displayed while the element is in focus */
-//.custom-radio .custom-control-input:focus ~ .custom-control-label::before {
+//custom-radio .custom-control-input:focus ~ .custom-control-label::before {
 //box-shadow: 0 0 0 1px green, 0 0 0 0.2rem rgba(255, 123, 255, 0.25); /* pink, 25% opacity */
 //}
 .custom-control-input ~ .custom-control-label {
