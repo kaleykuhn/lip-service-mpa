@@ -21,7 +21,10 @@ export default function YourLooks() {
             </div>
          </div>
 
-         <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} />
+         <div
+            className="card bg-light mb-0"
+            style={{ maxWidth: "18rem" }}
+         ></div>
          <div className="card-header">Match</div>
          <div className="card-body">
             <img
@@ -37,10 +40,10 @@ export default function YourLooks() {
                className=" float-right"
             />
             <div className="mb-0"></div>
-            <h4 id="cardfontcolor"> Name: Hitch Hike</h4>
-            <h4 id="cardfontcolor"> Color: Brick Rose</h4>
-            <h4 id="cardfontcolor"> Finish: Comfort Matte</h4>
-            <h4 id="cardfontcolor"> Brand: Urban Decay</h4>
+            <h4 class="cardfontcolor"> Name: Hitch Hike</h4>
+            <h4 class="cardfontcolor"> Color: Brick Rose</h4>
+            <h4 class="cardfontcolor"> Finish: Comfort Matte</h4>
+            <h4 class="cardfontcolor"> Brand: Urban Decay</h4>
             <a
                href="https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html"
                className="btn btn-primary float-right btn-sm  "
@@ -48,7 +51,7 @@ export default function YourLooks() {
                Buy Now
             </a>
             <h5 className="card-title">Light card title</h5>
-            <p className="card-text" id="cardfontcolor">
+            <p className="card-text cardfontcolor">
                {" "}
                <br></br>
                Brick rose with a Comfort Matte finish. It's a medium-dark rosy
@@ -77,10 +80,10 @@ export default function YourLooks() {
                className=" float-right"
             />
             <div className="mb-0"></div>
-            <h4 id="cardfontcolor"> Name: Hitch Hike</h4>
-            <h4 id="cardfontcolor"> Color: Brick Rose</h4>
-            <h4 id="cardfontcolor"> Finish: Comfort Matte</h4>
-            <h4 id="cardfontcolor"> Brand: Urban Decay</h4>
+            <h4 className="cardfontcolor"> Name: Hitch Hike</h4>
+            <h4 className="cardfontcolor"> Color: Brick Rose</h4>
+            <h4 className="cardfontcolor"> Finish: Comfort Matte</h4>
+            <h4 className="cardfontcolor"> Brand: Urban Decay</h4>
             <a
                href="https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html"
                className="btn btn-primary float-right btn-sm  "
@@ -88,7 +91,7 @@ export default function YourLooks() {
                Buy Now
             </a>
             <h5 className="card-title">Light card title</h5>
-            <p className="card-text" id="cardfontcolor">
+            <p className="card-text cardfontcolor">
                {" "}
                <br></br>
                Brick rose with a Comfort Matte finish. It's a medium-dark rosy
@@ -118,10 +121,10 @@ export default function YourLooks() {
                className=" float-right"
             />
             <div className="mb-0"></div>
-            <h4 id="cardfontcolor"> Name: Hitch Hike</h4>
-            <h4 id="cardfontcolor"> Color: Brick Rose</h4>
-            <h4 id="cardfontcolor"> Finish: Comfort Matte</h4>
-            <h4 id="cardfontcolor"> Brand: Urban Decay</h4>
+            <h4 className="cardfontcolor"> Name: Hitch Hike</h4>
+            <h4 className="cardfontcolor"> Color: Brick Rose</h4>
+            <h4 className="cardfontcolor"> Finish: Comfort Matte</h4>
+            <h4 className="cardfontcolor"> Brand: Urban Decay</h4>
             <a
                href="https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html"
                className="btn btn-primary float-right btn-sm  "
@@ -129,7 +132,7 @@ export default function YourLooks() {
                Buy Now
             </a>
             <h5 className="card-title">Light card title</h5>
-            <p className="card-text" id="cardfontcolor">
+            <p className="card-text cardfontcolor">
                {" "}
                <br></br>
                Brick rose with a Comfort Matte finish. It's a medium-dark rosy
