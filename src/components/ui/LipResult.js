@@ -1,17 +1,15 @@
 import React from "react";
-
-import exHitchHike from "../../img/hitchhikeexample.jpg";
-import exBigBang from "../../img/exbigbang.jpg";
-import Lovelight from "../../img/Lovelight.jpg";
 import appLogo from "../../img/comfortmattetemperud.jpg";
 
-export default class LipResult extends React.Component {
+class LipResult extends React.Component {
+   constructor(props) {
+      super(props);
+   }
    render() {
       const lipstick = this.props.lipstick;
 
       return (
-         <>
-            <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} />
+         <div className="col-12 card mb-2 px-1">
             <div className="card-header">Match</div>
             <div className="card-body">
                <img
@@ -24,27 +22,24 @@ export default class LipResult extends React.Component {
                   src={lipstick.modelImageUrl}
                   width="182px;"
                   alt="Lip Service Lips"
-                  className="float-right"
+                  className=" float-right"
                />
                <div className="mb-0"></div>
-               <h4 id="cardfontcolor">{lipstick.name}</h4>
-               <h4 id="cardfontcolor">{lipstick.color}</h4>
-               <h4 id="cardfontcolor">{lipstick.finish}</h4>
-               <h4 id="cardfontcolor"> {lipstick.brand}</h4>
+               <h4 className="cardfontcolor">{lipstick.name}</h4>
+               <h4 className="cardfontcolor">{lipstick.color}</h4>
+               <h4 className="cardfontcolor">{lipstick.finish}</h4>
+               <h4 className="cardfontcolor"> {lipstick.brand}</h4>
                <a
                   href={lipstick.buyNowUrl}
-                  className="btn btn-primary float-right btn-sm  "
+                  className="btn btn-primary float-right btn-sm "
                >
                   Buy Now
                </a>
                <h5 className="card-title">Light card title</h5>
-               <p className="card-text" id="cardfontcolor">
-                  {" "}
-                  <br></br>
-                  {lipstick.desc}
-               </p>
+               <p className="card-text cardfontcolor">{lipstick.desc}</p>
             </div>
-         </>
+         </div>
       );
    }
 }
+export default LipResult;
