@@ -1,5 +1,7 @@
 import React from "react";
 import classnames from "classnames";
+import hash from "object-hash";
+import { v4 as getUUid } from "uuid";
 
 export default class SignUP extends React.Component {
    constructor(props) {
@@ -100,13 +102,18 @@ export default class SignUP extends React.Component {
       console.log(emailInput);
       const passwordInput = document.getElementById("login-password-input")
          .value;
-
       this.setEmailState(emailInput);
       this.setPasswordState(passwordInput, emailInput);
       if (
          this.state.hasEmailError === false &&
          this.state.hasPasswordError === false
       ) {
+         //const user = {
+         // id: getUUuid(),
+         //email: emailInput,
+         //password: hash(passwordInput),
+         // createdAt: Date.now(),
+         //};
          console.log("Valid!!!!");
       }
    }
