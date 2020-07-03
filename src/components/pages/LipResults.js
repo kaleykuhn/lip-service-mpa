@@ -4,8 +4,8 @@ import Navigation from "../ui/Navigation";
 import AppTemplate from "../ui/AppTemplate";
 import { Link } from "react-router-dom";
 import LipResult from "../ui/LipResult";
-
 import lipsticks from "../../mock-data/lipsticks";
+
 export default function LipResults() {
    return (
       <AppTemplate>
