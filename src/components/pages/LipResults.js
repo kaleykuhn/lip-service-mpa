@@ -34,11 +34,12 @@ export default function LipResults() {
                </p>
             </div>
          </div>
-         <LipResult lipstick={lipsticks[1]} />
-         <LipResult lipstick={lipsticks[4]} />
-         <LipResult lipstick={lipsticks[5]} />
-         <LipResult lipstick={lipsticks[11]} />
-         {}
+         <div className="row">
+            <LipResult lipstick={lipsticks[1]} />
+            <LipResult lipstick={lipsticks[4]} />
+            <LipResult lipstick={lipsticks[5]} />
+            <LipResult lipstick={lipsticks[11]} />
+         </div>
          {/* {users.map((lipResult) => {
             return (
             <LipResult  tags={lipResult.tags}} 
