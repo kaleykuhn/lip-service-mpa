@@ -35,10 +35,12 @@ export default function LipResults() {
             </div>
          </div>
          <div className="row">
-            <LipResult lipstick={lipsticks[1]} />
-            <LipResult lipstick={lipsticks[4]} />
-            <LipResult lipstick={lipsticks[5]} />
-            <LipResult lipstick={lipsticks[11]} />
+            <div className="col-12 col-xl-10 offse-xl-3  col-lg-12 offset-lg-0 col-md-12 offset-md-0">
+               <LipResult lipstick={lipsticks[1]} />
+               <LipResult lipstick={lipsticks[4]} />
+               <LipResult lipstick={lipsticks[5]} />
+               <LipResult lipstick={lipsticks[11]} />
+            </div>
          </div>
          {/* {users.map((lipResult) => {
             return (
@@ -47,7 +49,7 @@ export default function LipResults() {
             );
          })} */}
 
-         {/* <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} />
+         {/* <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} >
          <div className="card-header">Match</div>
          <div className="card-body">
             <img
