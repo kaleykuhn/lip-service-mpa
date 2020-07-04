@@ -21,7 +21,7 @@ export default class SignUP extends React.Component {
       });
    }
 
-   setEmailState(emailInput) {
+   async setEmailState(emailInput) {
       const lowerCasedEmailInput = emailInput.toLowerCase();
       console.log(lowerCasedEmailInput);
       // eslint-disable-next-line
@@ -56,14 +56,14 @@ export default class SignUP extends React.Component {
       //.includes will return a true or false
    }
 
-   setPasswordState(passwordInput, emailInput) {
+   async setPasswordState(passwordInput, emailInput) {
       console.log(passwordInput);
       //can't be blank
       // must be at least 9 characters
       //cannot contain the local-part of the email
       //must have at least 3 unique characters
       const uniqChars = [...new Set(passwordInput)];
-      console.log(uniqChars);
+      console.log("Chars", uniqChars);
       if (passwordInput === "") {
          this.setState({
             passwordError: "Please create a password.",
@@ -94,13 +94,13 @@ export default class SignUP extends React.Component {
    }
 
    //setting the state of the application
-   validateAndCreateUser() {
+   async validateAndCreateUser() {
       console.log("VALIDATE ME");
       //Email cannot be blank
       //must have valid email regex
       const emailInput = document.getElementById("signup-email-input").value;
       console.log(emailInput);
-      const passwordInput = document.getElementById("login-password-input")
+      const passwordInput = document.getElementById("signup-password-input")
          .value;
       this.setEmailState(emailInput);
       this.setPasswordState(passwordInput, emailInput);
@@ -108,13 +108,13 @@ export default class SignUP extends React.Component {
          this.state.hasEmailError === false &&
          this.state.hasPasswordError === false
       ) {
-         //const user = {
-         // id: getUUuid(),
-         //email: emailInput,
-         //password: hash(passwordInput),
-         // createdAt: Date.now(),
-         //};
-         console.log("Valid!!!!");
+         const user = {
+            id: getUUid(),
+            email: emailInput,
+            password: hash(passwordInput),
+            createdAt: Date.now(),
+         };
+         console.log("Valid!!!!", user);
       }
    }
 
@@ -158,7 +158,7 @@ export default class SignUP extends React.Component {
                            )}
                            <div className="mb-4"></div>
                            <label
-                              htmlFor="login-password-input"
+                              htmlFor="signup-password-input"
                               className="text-muted"
                            >
                               Password
@@ -169,7 +169,7 @@ export default class SignUP extends React.Component {
                                  "form-control": true,
                                  "is-invalid": this.state.hasPasswordError,
                               })}
-                              id="login-password-input"
+                              id="signup-password-input"
                               placeholder=""
                            />
                            {this.state.hasPasswordError && (
