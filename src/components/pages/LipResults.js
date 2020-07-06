@@ -5,7 +5,7 @@ import AppTemplate from "../ui/AppTemplate";
 import { Link } from "react-router-dom";
 import LipResult from "../ui/LipResult";
 import lipsticks from "../../mock-data/lipsticks";
-
+import users from "../../mock-data/users";
 export default function LipResults() {
    return (
       <AppTemplate>
@@ -47,118 +47,23 @@ export default function LipResults() {
             <LipResult  tags={lipResult.tags}} 
             />
             );
-         })} */}
+         })} 
+         {
+               props.location.state.selectedLipsticks.map( selection => {
+                return ( <LipResult lipstick={lipsticks[selection] /> )
+               }
+         
+               {memoryCards.map((memoryCard) => {
+            return (
+               <MemoryCard
+                  answer={memoryCard.answer}
+                  imagery={memoryCard.imagery}
+                  key={memoryCard.id}
+               />
+            );
+         
+         */}
 
-         {/* <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} >
-         <div className="card-header">Match</div>
-         <div className="card-body">
-            <img
-               src={appLogo}
-               width="46px;"
-               alt="Lip Service Lips"
-               className="mb-2"
-            />
-            <img
-               src={exHitchHike}
-               width="182px;"
-               alt="Lip Service Lips"
-               className=" float-right"
-            />
-            <div className="mb-0"></div>
-            <h4 id="cardfontcolor"> {lipsticks[0].name}</h4>
-            <h4 id="cardfontcolor"> Brick Rose</h4>
-            <h4 id="cardfontcolor"> Comfort Matte</h4>
-            <h4 id="cardfontcolor"> Urban Decay</h4>
-            <a
-               href="https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html"
-               className="btn btn-primary float-right btn-sm  "
-            >
-               Buy Now
-            </a>
-            <h5 className="card-title">Light card title</h5>
-            <p className="card-text" id="cardfontcolor">
-               {" "}
-               <br></br>
-               Hitch Hike is a brick rose with a Comfort Matte finish. It's a
-               medium-dark rosy plum with warm undertones and a creamy finish.
-               It has a rich color payoff with a very smooth, creamy consistency
-               that glides onto lips and just makes lips look plumper. This
-               creamy formula is loaded with nourishing ingredients.
-            </p>
-         </div>
-         <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} />
-         <div className="card-header">Match</div>
-         <div className="card-body">
-            <img
-               src={appLogo}
-               width="46px;"
-               alt="Lip Service Lips"
-               className="mb-2"
-            />
-            <img
-               src={exBigBang}
-               width="182px;"
-               alt="Lip Service Lips"
-               className=" float-right"
-            />
-            <div className="mb-0"></div>
-            <h4 id="cardfontcolor"> Name: Big Bang</h4>
-            <h4 id="cardfontcolor"> Color: Dark Fuschia </h4>
-            <h4 id="cardfontcolor"> Finish: Metalized</h4>
-            <h4 id="cardfontcolor"> Brand: Urban Decay</h4>
-            <a
-               href="https://www.urbandecay.com/on/demandware.store/Sites-urbandecay-us-Site/default/Product-Variation?pid=ud771&dwvar_ud771_color=BIG%20BANG%20%28METALLIZED%29"
-               className="btn btn-primary float-right btn-sm  "
-            >
-               Buy Now
-            </a>
-            <h5 className="card-title">Light card title</h5>
-            <p className="card-text" id="cardfontcolor">
-               {" "}
-               <br></br>
-               Big Bang is a medium pink with subtle, cool undertones and light
-               and medium pink sparkle. It had medium coverage, which applies
-               evenly across the lips so it looks almost like a stain with a
-               glossy finish. The texture is smooth, lightweight, and thin but
-               not clingy.
-            </p>
-         </div>
-         <div className="mb-0"></div>
-         <div className="card bg-light mb-0" style={{ maxWidth: "18rem" }} />
-         <div className="card-header">Match</div>
-         <div className="card-body">
-            <img
-               src={appLogo}
-               width="46px;"
-               alt="Lip Service Lips"
-               className="mb-2"
-            />
-            <img
-               src={Lovelight}
-               width="182px;"
-               alt="Lip Service Lips"
-               className=" float-right"
-            />
-            <div className="mb-0"></div>
-            <h4 id="cardfontcolor"> Name: Love Light</h4>
-            <h4 id="cardfontcolor"> Color: Dark Coral</h4>
-            <h4 id="cardfontcolor"> Finish: Sheer Shimmer</h4>
-            <h4 id="cardfontcolor"> Brand: Urban Decay</h4>
-
-            <a
-               href="https://www.urbandecay.com/vice-lipstick-by-urban-decay/3605971157394.html?quantity=1&uuid=fba468fe1b4bcdf8449768795a"
-               className="btn btn-primary float-right btn-sm  "
-            >
-               Buy Now
-            </a>
-            <h5 className="card-title">Light card title</h5>
-            <p className="card-text" id="cardfontcolor">
-               {" "}
-               <br></br>
-               Lovelight is a moderately warm-toned, medium-dark coral with a
-               pearl finish.
-            </p>
-         </div> */}
          <div className="mb-8"></div>
          <div className="mb-8"></div>
          <Link
