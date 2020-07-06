@@ -4,7 +4,7 @@ import appLogo from "../../img/comfortmattetemperud.jpg";
 class LipResult extends React.Component {
    constructor(props) {
       super(props);
-      console.log("lip results");
+      console.log("lip-results");
    }
    render() {
       const lipstick = this.props.lipstick;
