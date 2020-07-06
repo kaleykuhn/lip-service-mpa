@@ -40,10 +40,10 @@ export default function YourLooks() {
                className=" float-right"
             />
             <div className="mb-0"></div>
-            <h4 class="cardfontcolor"> Name: Hitch Hike</h4>
-            <h4 class="cardfontcolor"> Color: Brick Rose</h4>
-            <h4 class="cardfontcolor"> Finish: Comfort Matte</h4>
-            <h4 class="cardfontcolor"> Brand: Urban Decay</h4>
+            <h4 className="cardfontcolor"> Name: Hitch Hike</h4>
+            <h4 className="cardfontcolor"> Color: Brick Rose</h4>
+            <h4 className="cardfontcolor"> Finish: Comfort Matte</h4>
+            <h4 className="cardfontcolor"> Brand: Urban Decay</h4>
             <a
                href="https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html"
                className="btn btn-primary float-right btn-sm  "
