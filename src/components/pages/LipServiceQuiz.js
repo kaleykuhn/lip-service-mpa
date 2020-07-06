@@ -8,10 +8,14 @@ export default class LipServiceQuiz extends React.Component {
    getUserInputs() {
       console.log("getUserInputs Pressed");
       // console.log(
-      //    document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e").value
+      //const radio = getElementByType("")
+      //var radio = document.getElementsByTagName('type');
+      //document.querySelectorAll('input[type=radio]')
       // );
       console.log(
          document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e").checked
+
+         //document.getElementsByTagName("quizquestion1radio").checked
       );
       this.props.history.push("/lip-results");
    }
