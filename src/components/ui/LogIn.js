@@ -15,7 +15,7 @@ class Login extends React.Component {
       };
    }
 
-   validateAndLogInUser() {
+   validateAndLogUser() {
       this.setState({
          isDisplayingInputs: true,
       });

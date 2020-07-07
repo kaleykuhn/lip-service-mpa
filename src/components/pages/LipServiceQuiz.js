@@ -17,7 +17,10 @@ export default class LipServiceQuiz extends React.Component {
          exhibit: user.quiz.exhibit.id,
       };
    }
-
+   setUserState(e) {}
+   setDescribe(e) {
+      this.setState({ answerRadio: e.target.value });
+   }
    getUserInputs() {
       console.log("getUserInputs Pressed");
       // console.log(

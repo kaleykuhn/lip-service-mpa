@@ -10,6 +10,7 @@ export default function YourLooks() {
       <AppTemplate>
          <Header />
          <Navigation />
+
          <h2>Looks</h2>
          <hr className="my-4"></hr>
          <div className="mb-5"></div>

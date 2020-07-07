@@ -6,7 +6,11 @@ import { Link } from "react-router-dom";
 import LipResult from "../ui/LipResult";
 import lipsticks from "../../mock-data/lipsticks";
 import users from "../../mock-data/users";
+
+const user = users[2];
+
 export default function LipResults() {
+   console.log(users);
    return (
       <AppTemplate>
          <Header />
@@ -35,19 +39,25 @@ export default function LipResults() {
             </div>
          </div>
          <div className="row">
-            <div className="col-12 col-xl-10 offse-xl-3  col-lg-12 offset-lg-0 col-md-12 offset-md-0">
-               <LipResult lipstick={lipsticks[1]} />
-               <LipResult lipstick={lipsticks[4]} />
-               <LipResult lipstick={lipsticks[5]} />
-               <LipResult lipstick={lipsticks[11]} />
-            </div>
+            <LipResult lipstick={lipsticks[1]} />
+            <LipResult lipstick={lipsticks[4]} />
+            <LipResult lipstick={lipsticks[5]} />
+            <LipResult lipstick={lipsticks[11]} />
          </div>
-         {/* {users.map((lipResult) => {
-            return (
+
+         {/* {users.map((lipresult) => {
+            return <UsersList /> ; */}
+         {/* {users.map((user) => {
+            return <UsersList /> ;
             <LipResult  tags={lipResult.tags}} 
             />
             );
          })} 
+            
+
+
+
+
          {
                props.location.state.selectedLipsticks.map( selection => {
                 return ( <LipResult lipstick={lipsticks[selection] /> )
