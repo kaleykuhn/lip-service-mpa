@@ -11,54 +11,47 @@ export default class LipServiceQuiz extends React.Component {
       super();
       this.state = {
          user: user,
-         describe: user.quiz.describe.id,
-         friend: user.quiz.friend.id,
-         value: user.quiz.value.id,
-         exhibit: user.quiz.exhibit.id,
+         describeYourselfAnswer: {},
+         friendAnswer: {},
+         valueAnswer: {},
+         exhibitAnswer: {},
       };
    }
-   setUserState(e) {}
-   setDescribe(e) {
-      this.setState({ answerRadio: e.target.value });
+   setDescribeYourselfAnswer(e) {
+      const tag = { id: e.target.id, answer: e.target.value };
+      this.setState({ describeYourselfAnswer: tag });
+      console.log(tag);
+   }
+   setFriendAnswer(e) {
+      const tag = { id: e.target.id, answer: e.target.value };
+      this.setState({ friendAnswer: tag });
+      console.log(tag);
+   }
+   setValueAnswer(e) {
+      const tag = { id: e.target.id, answer: e.target.value };
+      this.setState({ valueAnswer: tag });
+      console.log(tag);
+   }
+   setExhibitAnswer(e) {
+      const tag = { id: e.target.id, answer: e.target.value };
+      this.setState({ exhibitAnswer: tag });
+      console.log(tag);
    }
    getUserInputs() {
-      console.log("getUserInputs Pressed");
-      // console.log(
-      //    document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e").value
-      //const radio = getElementByType("")
-      //var radio = document.getElementsByTagName('type');
-      //document.querySelectorAll('input[type=radio]')
-      // );
-      console.log(
-         document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e")
-            .checked,
-         document.getElementById("d996f5fe-342a-42ba-bee8-329e78b13307")
-            .checked,
-         document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e")
-            .checked,
-         document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e")
-            .checked,
-         document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e")
-            .checked,
-         document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e")
-            .checked,
-         document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e")
-            .checked,
-         document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e")
-            .checked,
-         document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e")
-            .checked,
-         document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e")
-            .checked,
-         document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e")
-            .checked,
-         document.getElementById("942d4afe-5370-400d-b71f-d9f61c644f3e").checked
+      console.log(this.state.describeYourselfAnswer);
+      console.log(this.state.friendAnswer);
+      const tags = [
+         this.state.describeYourselfAnswer,
+         this.state.friendAnswer,
+         this.state.valueAnswer,
+         this.state.exhibitAnswer,
+      ];
 
-         //document.getElementsByTagName("quizquestion1radio").checked
-      );
-      this.props.history.push("/lip-results");
+      const newUser = { ...this.state.user };
+      newUser.tags = tags;
+      this.setState({ user: newUser });
+      // replace user.tags with this array in state(set State)
    }
-
    render() {
       return (
          <AppTemplate>
@@ -87,15 +80,14 @@ export default class LipServiceQuiz extends React.Component {
                   <div className="mb-3"></div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.describe ===
-                           "942d4afe-5370-400d-b71f-d9f61c644f3e"
-                        }
+                        onChange={(e) => {
+                           this.setDescribeYourselfAnswer(e);
+                        }}
                         className="custom-control-input"
                         type="radio"
                         name="describe"
                         id="942d4afe-5370-400d-b71f-d9f61c644f3e"
-                        value="942d4afe-5370-400d-b71f-d9f61c644f3e"
+                        value="Daring"
                      />
                      <label
                         className="custom-control-label"
@@ -106,15 +98,14 @@ export default class LipServiceQuiz extends React.Component {
                   </div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.describe ===
-                           "d996f5fe-342a-42ba-bee8-329e78b13307"
-                        }
+                        onChange={(e) => {
+                           this.setDescribeYourselfAnswer(e);
+                        }}
                         className="custom-control-input "
                         type="radio"
                         name="describe"
                         id="d996f5fe-342a-42ba-bee8-329e78b13307"
-                        value="d996f5fe-342a-42ba-bee8-329e78b13307"
+                        value="Reserved"
                      />
                      <label
                         className="custom-control-label"
@@ -125,15 +116,14 @@ export default class LipServiceQuiz extends React.Component {
                   </div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.describe ===
-                           "bc137dc8-74e1-402c-b2e3-f83a5aa75c32"
-                        }
+                        onChange={(e) => {
+                           this.setDescribeYourselfAnswer(e);
+                        }}
                         className="custom-control-input"
                         type="radio"
                         name="describe"
                         id="bc137dc8-74e1-402c-b2e3-f83a5aa75c32"
-                        value="bc137dc8-74e1-402c-b2e3-f83a5aa75c32"
+                        value="Compassionate"
                      />
 
                      <label
@@ -159,15 +149,14 @@ export default class LipServiceQuiz extends React.Component {
                   <div className="mb-3"></div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.friend ===
-                           "89887a54-ce4c-40b3-968a-4a0e10c4f4ab"
-                        }
+                        onChange={(e) => {
+                           this.setFriendAnswer(e);
+                        }}
                         className="custom-control-input"
                         type="radio"
                         name="friend"
                         id="89887a54-ce4c-40b3-968a-4a0e10c4f4ab"
-                        value="89887a54-ce4c-40b3-968a-4a0e10c4f4ab"
+                        value="Communicative"
                      />
                      <label
                         className="custom-control-label"
@@ -178,15 +167,14 @@ export default class LipServiceQuiz extends React.Component {
                   </div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.friend ===
-                           "194b8bb1-c609-4686-8772-8d84a850dc57"
-                        }
+                        onChange={(e) => {
+                           this.setFriendAnswer(e);
+                        }}
                         className="custom-control-input  "
                         type="radio"
                         name="friend"
                         id="194b8bb1-c609-4686-8772-8d84a850dc57"
-                        value="option2"
+                        value="Discreet"
                      />
                      <label
                         className="custom-control-label"
@@ -197,15 +185,14 @@ export default class LipServiceQuiz extends React.Component {
                   </div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.friend ===
-                           "9a7444b0-8b2f-40c6-91fd-0b57107f1d97"
-                        }
+                        onChange={(e) => {
+                           this.setFriendAnswer(e);
+                        }}
                         className="custom-control-input"
                         type="radio"
                         name="friend"
                         id="9a7444b0-8b2f-40c6-91fd-0b57107f1d97"
-                        value="option3"
+                        value="Candid"
                      />
                      <label
                         className="custom-control-label"
@@ -230,10 +217,9 @@ export default class LipServiceQuiz extends React.Component {
                   <div className="mb-3"></div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.value ===
-                           "57a75a90-1d93-427a-9913-9254843d373b"
-                        }
+                        onChange={(e) => {
+                           this.setValueAnswer(e);
+                        }}
                         className="custom-control-input"
                         type="radio"
                         name="value"
@@ -250,10 +236,9 @@ export default class LipServiceQuiz extends React.Component {
                   </div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.value ===
-                           "a74c46e3-54d4-4694-a725-5b15e5e06689"
-                        }
+                        onChange={(e) => {
+                           this.setValueAnswer(e);
+                        }}
                         className="custom-control-input "
                         type="radio"
                         name="value"
@@ -271,10 +256,9 @@ export default class LipServiceQuiz extends React.Component {
                   </div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.value ===
-                           "8bbe9a09-0d6d-45be-852d-b3346332bedc"
-                        }
+                        onChange={(e) => {
+                           this.setValueAnswer(e);
+                        }}
                         className="custom-control-input"
                         type="radio"
                         name="value"
@@ -304,10 +288,9 @@ export default class LipServiceQuiz extends React.Component {
                   <div className="mb-3"></div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.value ===
-                           "ac1ab5d3-1c67-4afc-94c1-c2765efcaa9f"
-                        }
+                        onChange={(e) => {
+                           this.setExhibitAnswer(e);
+                        }}
                         className="custom-control-input"
                         type="radio"
                         name="exhibit"
@@ -324,10 +307,9 @@ export default class LipServiceQuiz extends React.Component {
                   </div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.exhibit ===
-                           "5ae236f3-c9e4-4fc3-9f55-5322896c6c60"
-                        }
+                        onChange={(e) => {
+                           this.setExhibitAnswer(e);
+                        }}
                         className="custom-control-input "
                         type="radio"
                         name="exhibit"
@@ -343,10 +325,9 @@ export default class LipServiceQuiz extends React.Component {
                   </div>
                   <div className="custom-control custom-radio">
                      <input
-                        checked={
-                           this.state.exhibit ===
-                           "08cc0730-3cd1-490c-a7f3-d3f44e14dede"
-                        }
+                        onChange={(e) => {
+                           this.setExhibitAnswer(e);
+                        }}
                         className="custom-control-input"
                         type="radio"
                         name="exhibit"

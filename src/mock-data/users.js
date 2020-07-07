@@ -4,24 +4,24 @@ const users = [
       email: "kaleyK@gmail.com",
       password: "A267F7DBA707256B0B664DEE86AB9AE8B4941218",
       createdAt: "1593627051313 ",
-      quiz: {
-         describe: {
+      tags: [
+         {
             id: "d996f5fe-342a-42ba-bee8-329e78b13307",
             answer: "Reserved",
          },
-         friend: {
+         {
             id: "194b8bb1-c609-4686-8772-8d84a850dc57",
             answer: "Discreet",
          },
-         value: {
+         {
             id: "57a75a90-1d93-427a-9913-9254843d373b",
             answer: "Creativity",
          },
-         exhibit: {
+         {
             id: "08cc0730-3cd1-490c-a7f3-d3f44e14dede",
             answer: "Open Mindedness",
          },
-      },
+      ],
    },
    {
       id: "6aee7261-0352-41f5-b410-072aafb34b56",

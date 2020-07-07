@@ -33,12 +33,10 @@ const lipsticks = [
       buyNowUrl:
          "https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html",
 
-      tags: [
-         {
-            id: "d996f5fe-342a-42ba-bee8-329e78b13307",
-            answer: "Reserved",
-         },
-      ],
+      tag: {
+         id: "d996f5fe-342a-42ba-bee8-329e78b13307",
+         answer: "Reserved",
+      },
    },
    {
       id: "eebd3959-501e-45e1-834e-4ddbec267328",
