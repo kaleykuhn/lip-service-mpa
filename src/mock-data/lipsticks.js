@@ -11,12 +11,10 @@ const lipsticks = [
          "https://www.urbandecay.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-urbandecay-master-catalog/default/dw732ed6a6/ViceLipstickLPImages/ModelImages/3605971155833_vicelipstick_metalized_bigbang_alt6.jpg?sw=570&sh=570&sm=fit&q=70",
       buyNowUrl:
          "https://www.urbandecay.com/on/demandware.store/Sites-urbandecay-us-Site/default/Product-Variation?pid=ud771&dwvar_ud771_color=BIG%20BANG%20%28METALLIZED%29",
-      tags: [
-         {
-            id: "942d4afe-5370-400d-b71f-d9f61c644f3e",
-            answer: "Daring",
-         },
-      ],
+      tag: {
+         id: "942d4afe-5370-400d-b71f-d9f61c644f3e",
+         answer: "Daring",
+      },
    },
    {
       id: "2adb6881-0e9e-4e3d-98ca-5da323791196",
@@ -51,12 +49,10 @@ const lipsticks = [
       buyNowUrl:
          "https://www.urbandecay.com/vice-lipstick-by-urban-decay/3605971157394.html?quantity=1&uuid=fba468fe1b4bcdf8449768795a",
 
-      tags: [
-         {
-            id: "bc137dc8-74e1-402c-b2e3-f83a5aa75c32",
-            answer: "Compassionate",
-         },
-      ],
+      tag: {
+         id: "bc137dc8-74e1-402c-b2e3-f83a5aa75c32",
+         answer: "Compassionate",
+      },
    },
    {
       id: "205027d3-8cda-44ac-83d2-3de5e7ac9fb6",
@@ -71,12 +67,10 @@ const lipsticks = [
       buyNowUrl:
          "https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html?dwvar_ud771_color=JILTED%20%28CREAM%29",
 
-      tags: [
-         {
-            id: "89887a54-ce4c-40b3-968a-4a0e10c4f4ab",
-            answer: "Communicative",
-         },
-      ],
+      tag: {
+         id: "89887a54-ce4c-40b3-968a-4a0e10c4f4ab",
+         answer: "Communicative",
+      },
    },
    {
       id: "98d0ef9f-f1ec-4139-8ad6-4f50f55308ab",
@@ -92,12 +86,10 @@ const lipsticks = [
       buyNowUrl:
          "https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html?dwvar_ud771_color=Oblivion%20%28MEGA%20MATTE%29",
 
-      tags: [
-         {
-            id: "194b8bb1-c609-4686-8772-8d84a850dc57",
-            answer: "Discreet",
-         },
-      ],
+      tag: {
+         id: "194b8bb1-c609-4686-8772-8d84a850dc57",
+         answer: "Discreet",
+      },
    },
    {
       id: "55e1d1fa-000d-4dbb-9664-7b70077ea3d9",
@@ -112,12 +104,10 @@ const lipsticks = [
       buyNowUrl:
          "https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html?dwvar_ud771_color=714%20%28MEGA%20MATTE%29",
 
-      tags: [
-         {
-            id: "9a7444b0-8b2f-40c6-91fd-0b57107f1d97",
-            answer: "Candid",
-         },
-      ],
+      tag: {
+         id: "9a7444b0-8b2f-40c6-91fd-0b57107f1d97",
+         answer: "Candid",
+      },
    },
 
    {
@@ -133,12 +123,10 @@ const lipsticks = [
       buyNowUrl:
          "https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html?dwvar_ud771_color=Crash%20%28MEGA%20MATTE%29",
 
-      tags: [
-         {
-            id: "57a75a90-1d93-427a-9913-9254843d373b",
-            answer: "Creativity",
-         },
-      ],
+      tag: {
+         id: "57a75a90-1d93-427a-9913-9254843d373b",
+         answer: "Creativity",
+      },
    },
    {
       id: "aa6554cc-668d-4f73-b927-876c28480ca3",
@@ -153,12 +141,10 @@ const lipsticks = [
       buyNowUrl:
          "https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html?dwvar_ud771_color=MRS.%20MIA%20WALLACE%20%28CREAM%29",
 
-      tags: [
-         {
-            id: "a74c46e3-54d4-4694-a725-5b15e5e06689",
-            answer: " Decisiveness",
-         },
-      ],
+      tag: {
+         id: "a74c46e3-54d4-4694-a725-5b15e5e06689",
+         answer: " Decisiveness",
+      },
    },
    {
       id: "7355c440-ac02-45b2-aa4a-52192248965d",
@@ -173,12 +159,10 @@ const lipsticks = [
       buyNowUrl:
          "https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html?dwvar_ud771_color=VIOLATE%20%28CREAM%29",
 
-      tags: [
-         {
-            id: "8bbe9a09-0d6d-45be-852d-b3346332bedc",
-            answer: " Sincerity ",
-         },
-      ],
+      tag: {
+         id: "8bbe9a09-0d6d-45be-852d-b3346332bedc",
+         answer: " Sincerity ",
+      },
    },
    {
       id: "745c38a7-f05c-423b-a5bb-71d4587ec605",
@@ -193,12 +177,10 @@ const lipsticks = [
       buyNowUrl:
          "https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html?dwvar_ud771_color=SHAME%20%28CREAM%29",
 
-      tags: [
-         {
-            id: "ac1ab5d3-1c67-4afc-94c1-c2765efcaa9f",
-            answer: "Dominance",
-         },
-      ],
+      tag: {
+         id: "ac1ab5d3-1c67-4afc-94c1-c2765efcaa9f",
+         answer: "Dominance",
+      },
    },
    {
       id: "00de5359-fa23-4e5d-9223-31221cdfd439",
@@ -213,12 +195,10 @@ const lipsticks = [
       buyNowUrl:
          "https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html?dwvar_ud771_color=HEROINE%20%28COMFORT%20MATTE%29",
 
-      tags: [
-         {
-            id: "5ae236f3-c9e4-4fc3-9f55-5322896c6c60",
-            answer: "Loyalty",
-         },
-      ],
+      tag: {
+         id: "5ae236f3-c9e4-4fc3-9f55-5322896c6c60",
+         answer: "Loyalty",
+      },
    },
    {
       id: "81dece61-4e19-4e7d-9b83-0a8527ef0ad7",
@@ -233,12 +213,10 @@ const lipsticks = [
       buyNowUrl:
          "https://www.urbandecay.com/vice-lipstick-by-urban-decay/ud771.html?dwvar_ud771_color=PANDEMONIUM%20%28MEGA%20MATTE%29",
 
-      tags: [
-         {
-            id: "08cc0730-3cd1-490c-a7f3-d3f44e14dede",
-            answer: "Open Mindedness",
-         },
-      ],
+      tag: {
+         id: "08cc0730-3cd1-490c-a7f3-d3f44e14dede",
+         answer: "Open Mindedness",
+      },
    },
 ];
 export default lipsticks;
