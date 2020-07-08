@@ -7,16 +7,42 @@ import LipResult from "../ui/LipResult";
 import lipsticks from "../../mock-data/lipsticks";
 import users from "../../mock-data/users";
 
-//const user = users[2];
-
 export default class LipResults extends React.Component {
    constructor(props) {
       super(props);
-      this.state = {
-         user: user,
-      };
+
+      // this.state = {
+      //    user: users,
+      // };
    }
    render() {
+      const userAnswers = {};
+      const user = this.props.location.results;
+      let recomendations = [];
+      lipsticks.forEach((lipstick) => {
+         user.tags.forEach((tag) => {
+            if (tag.id == lipstick.tag.id) {
+               recomendations.push(lipstick);
+            }
+         });
+      });
+      console.log(recomendations);
+
+      // const lipstickRecommendations = lipsticks
+      //    .map((lipstick) => {
+      //       let timesMatched = 0;
+      //       user.tags.forEach((tags) => {
+      //          lipstick.forEach((tag) => {
+      //             if (tag.tag.id === tags.id) timesMatched += 1;
+      //          });
+      //       });
+      //       if (timesMatched > 0) lipstick.isRecommended = true;
+      //       else lipstick.isRecommended = false;
+      //       return lipstick;
+      //    })
+      //    .filter((lipstick) => lipstick.isRecommended);
+      // console.log(lipstickRecommendations);
+
       return (
          <AppTemplate>
             <Header />
@@ -45,10 +71,14 @@ export default class LipResults extends React.Component {
                </div>
             </div>
             <div className="row">
-               <LipResult lipstick={lipsticks[0]} />
-               <LipResult lipstick={lipsticks[4]} />
-               <LipResult lipstick={lipsticks[5]} />
-               <LipResult lipstick={lipsticks[11]} />
+               {/* <LipResult lipstick={lipstickRecommendations[0]} />
+               <LipResult lipstick={lipstickRecommendations[1]} />
+               <LipResult lipstick={lipstickRecommendations[2]} />
+               <LipResult lipstick={lipstickRecommendations[3]} /> */}
+
+               {recomendations.map((match) => (
+                  <LipResult lipstick={match} />
+               ))}
             </div>
 
             {/* {users.map((lipresult) => {
@@ -59,10 +89,19 @@ export default class LipResults extends React.Component {
                />
                );
             })} 
-               
-   
-   
-   
+               const user = [];
+               const lipsticks = [];
+               const lipsticks = [];
+               const filteredLipsticks = lipsticks.filter((lipstick)) => {
+                  return( 
+                      lipstick.id === user.tags[0].id ||
+                      lipstick.id === user.tags[1].id ||
+                      lipstick.id === user.tags[2].id ||
+                      lipstick.id === user.tags[3].id 
+                  );
+               });
+                           
+                        
    
             {
                   props.location.state.selectedLipsticks.map( selection => {
