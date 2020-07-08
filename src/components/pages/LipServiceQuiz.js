@@ -3,7 +3,7 @@ import Header from "../ui/Header";
 import Navigation from "../ui/Navigation";
 import AppTemplate from "../ui/AppTemplate";
 import users from "../../mock-data/users";
-
+import { Link } from "react-router-dom";
 import appLogo from "../../icons/rote-lippen.png";
 const user = users[0];
 export default class LipServiceQuiz extends React.Component {
@@ -20,7 +20,7 @@ export default class LipServiceQuiz extends React.Component {
    setDescribeYourselfAnswer(e) {
       const tag = { id: e.target.id, answer: e.target.value };
       this.setState({ describeYourselfAnswer: tag });
-      console.log(tag);
+      console.log("describe", this.state.describeYourselfAnswer);
    }
    setFriendAnswer(e) {
       const tag = { id: e.target.id, answer: e.target.value };
@@ -38,8 +38,8 @@ export default class LipServiceQuiz extends React.Component {
       console.log(tag);
    }
    getUserInputs() {
-      console.log(this.state.describeYourselfAnswer);
-      console.log(this.state.friendAnswer);
+      console.log("test", this.state.describeYourselfAnswer);
+      console.log("testtwo", this.state.friendAnswer);
       const tags = [
          this.state.describeYourselfAnswer,
          this.state.friendAnswer,
@@ -49,7 +49,15 @@ export default class LipServiceQuiz extends React.Component {
 
       const newUser = { ...this.state.user };
       newUser.tags = tags;
+      console.log(newUser);
       this.setState({ user: newUser });
+      //console.log(this.state.user);
+
+      this.props.history.push({
+         pathname: "/lip-results",
+         results: newUser,
+      });
+
       // replace user.tags with this array in state(set State)
    }
    render() {
@@ -224,7 +232,7 @@ export default class LipServiceQuiz extends React.Component {
                         type="radio"
                         name="value"
                         id="57a75a90-1d93-427a-9913-9254843d373b"
-                        value="57a75a90-1d93-427a-9913-9254843d373b"
+                        value="Creativity"
                      />
 
                      <label
@@ -243,7 +251,7 @@ export default class LipServiceQuiz extends React.Component {
                         type="radio"
                         name="value"
                         id="a74c46e3-54d4-4694-a725-5b15e5e06689"
-                        value="a74c46e3-54d4-4694-a725-5b15e5e06689"
+                        value="Decisiveness"
                      />
 
                      <label
@@ -263,7 +271,7 @@ export default class LipServiceQuiz extends React.Component {
                         type="radio"
                         name="value"
                         id="8bbe9a09-0d6d-45be-852d-b3346332bedc"
-                        value="8bbe9a09-0d6d-45be-852d-b3346332bedc"
+                        value="Sincerity"
                      />
                      <label
                         className="custom-control-label"
@@ -295,7 +303,7 @@ export default class LipServiceQuiz extends React.Component {
                         type="radio"
                         name="exhibit"
                         id="ac1ab5d3-1c67-4afc-94c1-c2765efcaa9f"
-                        value="ac1ab5d3-1c67-4afc-94c1-c2765efcaa9f"
+                        value="Dominance"
                      />
                      <label
                         className="custom-control-label"
@@ -314,7 +322,7 @@ export default class LipServiceQuiz extends React.Component {
                         type="radio"
                         name="exhibit"
                         id="5ae236f3-c9e4-4fc3-9f55-5322896c6c60"
-                        value="5ae236f3-c9e4-4fc3-9f55-5322896c6c60"
+                        value="Loyalty"
                      />
                      <label
                         className="custom-control-label"
@@ -332,7 +340,7 @@ export default class LipServiceQuiz extends React.Component {
                         type="radio"
                         name="exhibit"
                         id="08cc0730-3cd1-490c-a7f3-d3f44e14dede"
-                        value="08cc0730-3cd1-490c-a7f3-d3f44e14dede"
+                        value="Open Mindedness"
                      />
 
                      <label
@@ -348,7 +356,6 @@ export default class LipServiceQuiz extends React.Component {
 
             <div className="py-8">
                <button
-                  to="/lip-results"
                   className="btn btn-outline-secondary btn-lg float-right "
                   id="nextButton"
                   onClick={() => this.getUserInputs()}
