@@ -7,9 +7,15 @@ import LipResult from "../ui/LipResult";
 import lipsticks from "../../mock-data/lipsticks";
 import users from "../../mock-data/users";
 
-const user = users[2];
+//const user = users[2];
 
 export default class LipResults extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         user: user,
+      };
+   }
    render() {
       return (
          <AppTemplate>
