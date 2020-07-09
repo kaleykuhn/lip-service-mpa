@@ -15,6 +15,10 @@ export default class LipServiceQuiz extends React.Component {
          friendAnswer: {},
          valueAnswer: {},
          exhibitAnswer: {},
+         /* user: {}
+            quiz answers: {}
+            index of answer: {}
+         */
       };
    }
    setDescribeYourselfAnswer(e) {

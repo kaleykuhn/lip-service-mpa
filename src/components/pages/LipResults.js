@@ -5,7 +5,6 @@ import AppTemplate from "../ui/AppTemplate";
 import { Link } from "react-router-dom";
 import LipResult from "../ui/LipResult";
 import lipsticks from "../../mock-data/lipsticks";
-import users from "../../mock-data/users";
 
 export default class LipResults extends React.Component {
    constructor(props) {
@@ -13,6 +12,7 @@ export default class LipResults extends React.Component {
 
       // this.state = {
       //    user: users,
+      //
       // };
    }
    render() {
