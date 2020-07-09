@@ -12,7 +12,9 @@ export default class LipResults extends React.Component {
       super(props);
 
       axios
-         .get("https://run.mocky.io/v3/824fce2e-2203-438a-ad09-77c8ea7b976a")
+         .get(
+            "https://raw.githubusercontent.com/kaleykuhn/lip-service-mpa/master/src/mock-data/lipsticks.json"
+         )
          .then(function (response) {
             // handle success
             console.log(response);
