@@ -5,10 +5,22 @@ import AppTemplate from "../ui/AppTemplate";
 import { Link } from "react-router-dom";
 import LipResult from "../ui/LipResult";
 import lipsticks from "../../mock-data/lipsticks";
+import axios from "axios";
 
 export default class LipResults extends React.Component {
    constructor(props) {
       super(props);
+
+      axios
+         .get("https://run.mocky.io/v3/824fce2e-2203-438a-ad09-77c8ea7b976a")
+         .then(function (response) {
+            // handle success
+            console.log(response);
+         })
+         .catch(function (error) {
+            // handle error
+            console.log(error);
+         });
 
       // this.state = {
       //    user: users,

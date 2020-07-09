@@ -5,10 +5,23 @@ import AppTemplate from "../ui/AppTemplate";
 import users from "../../mock-data/users";
 import { Link } from "react-router-dom";
 import appLogo from "../../icons/rote-lippen.png";
+import axios from "axios";
+
 const user = users[0];
 export default class LipServiceQuiz extends React.Component {
    constructor() {
       super();
+      axios
+         .get("https://run.mocky.io/v3/a93cc483-909e-4976-9ffb-4005d28e49e1")
+         .then(function (response) {
+            // handle success
+            console.log(response);
+         })
+         .catch(function (error) {
+            // handle error
+            console.log(error);
+         });
+
       this.state = {
          user: user,
          describeYourselfAnswer: {},
@@ -17,7 +30,7 @@ export default class LipServiceQuiz extends React.Component {
          exhibitAnswer: {},
          /* user: {}
             quiz answers: {}
-            index of answer: {}
+            index of answer: 0
          */
       };
    }
