@@ -6,8 +6,10 @@ import { Link } from "react-router-dom";
 import LipResult from "../ui/LipResult";
 import lipsticks from "../../mock-data/lipsticks";
 import axios from "axios";
+import { connect } from "react-redux";
+import actions from "../../store/actions";
 
-export default class LipResults extends React.Component {
+class LipResults extends React.Component {
    constructor(props) {
       super(props);
 
@@ -15,9 +17,13 @@ export default class LipResults extends React.Component {
          .get(
             "https://raw.githubusercontent.com/kaleykuhn/lip-service-mpa/master/src/mock-data/lipsticks.json"
          )
-         .then(function (response) {
+         .then(function (res) {
             // handle success
-            console.log(response);
+            console.log(res);
+            props.dispatch({
+               type: actions.STORE_LIPSTICK,
+               payload: res.data,
+            });
          })
          .catch(function (error) {
             // handle error
@@ -30,9 +36,12 @@ export default class LipResults extends React.Component {
       // };
    }
    render() {
+      const test2 = this.lipsticks;
+      console.log(test2);
       const userAnswers = {};
       const user = this.props.location.results;
       let recomendations = [];
+
       lipsticks.forEach((lipstick) => {
          user.tags.forEach((tag) => {
             if (tag.id == lipstick.tag.id) {
@@ -40,7 +49,9 @@ export default class LipResults extends React.Component {
             }
          });
       });
+
       console.log(recomendations);
+      const lipstickRecommendations = this.props.lipstick;
 
       // const lipstickRecommendations = lipsticks
       //    .map((lipstick) => {
@@ -154,3 +165,9 @@ export default class LipResults extends React.Component {
       );
    }
 }
+function mapStateToProps(state) {
+   return {
+      lipstick: state.liptick,
+   };
+}
+export default connect(mapStateToProps)(LipResults);
