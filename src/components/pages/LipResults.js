@@ -36,19 +36,21 @@ class LipResults extends React.Component {
       // };
    }
    render() {
-      const test2 = this.lipsticks;
-      console.log(test2);
+      const test2 = this.props.lipstick;
+      console.log("TESY", test2);
       const userAnswers = {};
       const user = this.props.location.results;
       let recomendations = [];
 
-      lipsticks.forEach((lipstick) => {
-         user.tags.forEach((tag) => {
-            if (tag.id == lipstick.tag.id) {
-               recomendations.push(lipstick);
-            }
+      {
+         lipsticks.forEach((lipstick) => {
+            user.tags.forEach((tag) => {
+               if (tag.id == lipstick.tag.id) {
+                  recomendations.push(lipstick);
+               }
+            });
          });
-      });
+      }
 
       console.log(recomendations);
       const lipstickRecommendations = this.props.lipstick;
@@ -167,7 +169,7 @@ class LipResults extends React.Component {
 }
 function mapStateToProps(state) {
    return {
-      lipstick: state.liptick,
+      lipstick: state.lipstick,
    };
 }
 export default connect(mapStateToProps)(LipResults);
